@@ -1,0 +1,105 @@
+@import url(https://fonts.googleapis.com/css?family=Fugaz+One:regular);
+* {
+  margin: 0;
+  padding: 0;
+}
+.heading {
+  font-family: Fugaz One;
+}
+.gamecontainer {
+  display: flex;
+  justify-content: center;
+ 
+}
+.game {
+ 
+  display: grid;
+  grid-template-columns: repeat(3, 10vw);
+  grid-template-rows: repeat(3, 10vw);
+}
+.boxtext {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  font-size: 8vw;
+  border: 2px solid black;
+}
+.gameinfo {
+  background-color: rgb(255, 255, 255);
+  padding: 5vw;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.br-0 {
+  border-right: 0;
+}
+.bl-0 {
+  border-left: 0;
+}
+.bb-0 {
+  border-bottom: 0;
+}
+.bt-0 {
+  border-top: 0;
+}
+.winnerinfo {
+  margin: 5px;
+  font-size: 16px;
+  font-family: Fugaz One;
+}
+.reset {
+  background: #f7a1ff;
+  background-image: -webkit-linear-gradient(top, #f7a1ff, #849dad);
+  background-image: -moz-linear-gradient(top, #f7a1ff, #849dad);
+  background-image: -ms-linear-gradient(top, #f7a1ff, #849dad);
+  background-image: -o-linear-gradient(top, #f7a1ff, #849dad);
+  background-image: linear-gradient(to bottom, #f7a1ff, #849dad);
+  -webkit-border-radius: 12;
+  -moz-border-radius: 12;
+  border-radius: 12px;
+  font-family: Fugaz One;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.reset:hover {
+  background: #849dad;
+  background-image: -webkit-linear-gradient(top, #849dad, #f7a1ff);
+  background-image: -moz-linear-gradient(top, #849dad, #f7a1ff);
+  background-image: -ms-linear-gradient(top, #849dad, #f7a1ff);
+  background-image: -o-linear-gradient(top, #849dad, #f7a1ff);
+  background-image: linear-gradient(to bottom, #849dad, #f7a1ff);
+  text-decoration: none;
+}
+.line {
+  height: 3px;
+  width: 0;
+  position: absolute;
+  background-color: #ce7af5;
+  transition: width 1s ease-in-out;
+}
+@media screen and (max-width: 800px) {
+  .gamecontainer {
+    flex-wrap: wrap;
+  }
+  .gameinfo {
+    margin-top: auto;
+  }
+  .game {
+    grid-template-columns: repeat(3, 30vw);
+    grid-template-rows: repeat(3, 30vw);
+  }
+  .box {
+    font-size: 15vw;
+  }
+  .line{
+    display: none;
+  }
+}
