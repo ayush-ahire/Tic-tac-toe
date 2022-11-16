@@ -1,6 +1,6 @@
 
 # Tic Tac Toe
-Simple X and 0 game made for javascript practice purpose. Have referenced this one from code with harry youtube channe.
+Simple X and 0 game made for javascript practice purpose. Have referenced this one from code with harry youtube channel.
 
 I have used the following languages and libraries
 1. HTML
